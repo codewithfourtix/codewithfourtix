@@ -29,7 +29,9 @@
 
 ## Favorite Quote
 > "Code is like humor. When you have to explain it, it’s bad." – Cory House
+> *“It's always the JavaScript that is confusing...”*
 
+## Technologies That I have worked with
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.x-blueviolet)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-06B6D4)
 ![C](https://img.shields.io/badge/C-Programming%20Language-blue)
