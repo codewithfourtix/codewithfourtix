@@ -37,5 +37,11 @@
 ![Ant Design](https://img.shields.io/badge/Ant%20Design-4.x-blue)
 ![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC)
 ![RapidAPI](https://img.shields.io/badge/RapidAPI-Toolkit-00A7D0)
+![React](https://img.shields.io/badge/React-16.8%2B-blue)
+![Node.js](https://img.shields.io/badge/Node.js-14.x-green)
+![Express.js](https://img.shields.io/badge/Express.js-4.x-black)
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
 
 
