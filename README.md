@@ -17,7 +17,7 @@
 
 ## Connect with Me
 - [LinkedIn](https://www.linkedin.com/in/codewithfourtix/)
-- [Twitter](https://twitter.com/yourhandle)
+- [Twitter](https://twitter.com/codewithfourtix)
 - [Instagram](https://www.instagram.com/code_with_fourtix)
 
 ## GitHub Stats
@@ -30,7 +30,12 @@
 ## Favorite Quote
 > "Code is like humor. When you have to explain it, it’s bad." – Cory House
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
-![React](https://img.shields.io/badge/React-16.8%2B-blue)
-![Node.js](https://img.shields.io/badge/Node.js-14.x-green)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.x-blueviolet)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-06B6D4)
+![C](https://img.shields.io/badge/C-Programming%20Language-blue)
+![C++](https://img.shields.io/badge/C++-Programming%20Language-brightgreen)
+![Ant Design](https://img.shields.io/badge/Ant%20Design-4.x-blue)
+![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC)
+![RapidAPI](https://img.shields.io/badge/RapidAPI-Toolkit-00A7D0)
+
 
