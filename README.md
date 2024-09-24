@@ -26,7 +26,7 @@
 
 - **Tools:**
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" width="50" height="50"/>
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="gitHub" width="50" height="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="gitHub" width="50" height="50"/>
  
 ## Projects
 - **[Gemini AI Clone](https://fourtix-gemini.netlify.app/):** A fully responsive AI chatbot application built with ReactJS.
@@ -37,15 +37,7 @@
 - [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/code_with_fourtix)
 
 ## GitHub Stats
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=tokyonight)
-
-## Latest Blog Posts
-- [How to Build a Responsive Web App with ReactJS](https://yourblog.com/reactjs-responsive)
-- [Understanding Modern Web Frameworks](https://yourblog.com/web-frameworks)
-
-## Favorite Quote
-> "Code is like humor. When you have to explain it, it’s bad." – Cory House  
-> *“It's always the JavaScript that is confusing...”*
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=codewithfourtix&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=tokyonight)
 
 ## Technologies That I have worked with
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.x-blueviolet)
