@@ -2,10 +2,10 @@
 
 ## About Me
 
-- 🎓 Currently pursuing a Bachelor’s in Computer Science at FAST University Lahore.
-- 💻 Passionate about programming, web development, and emerging technologies.
-- 🌟 Creator of [code_with_fourtix](https://www.instagram.com/code_with_fourtix) with over 92k followers.
-- 🧩 Interested in ReactJS, NextJS, and modern web frameworks.
+- 🎓 Currently pursuing a Bachelor’s in Computer Science at FAST University Lahore
+- 💻 I am a Full Stack Software Engineer
+- 🌟 Creator of [code_with_fourtix](https://www.instagram.com/code_with_fourtix) with over 92k followers
+- 🧩 Interested in building scalable SAAS products
 
 ## Skills & Technologies
 
@@ -34,9 +34,15 @@
 - [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/alizulfiqar46)
 - [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/code_with_fourtix)
 
-## GitHub Stats
+## 🚀 GitHub Stats
 
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=codewithfourtix&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=tokyonight)
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=codewithfourtix&show_icons=true&count_private=true&hide=prs&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=codewithfourtix&layout=compact&theme=tokyonight)
+
+![GitHub Streak](https://github-readme-streak-stats.vercel.app/?user=codewithfourtix&theme=tokyonight&hide_border=false)
+
+![Trophy](https://github-profile-trophy.vercel.app/?username=codewithfourtix&theme=tokyonight&column=7)
 
 ## Technologies That I have worked with
 
