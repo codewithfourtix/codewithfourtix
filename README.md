@@ -4,7 +4,7 @@
 
 <a href="https://discord.gg/5dZPVytKnn">
     <h3 align="center">
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fkhi.nu.edu.pk%2F&psig=AOvVaw1t-XKgzb53sGiphj9FbGnS&ust=1754392075982000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIiiuvaB8Y4DFQAAAAAdAAAAABAE" width="280"><br>
+        <img src="Blue and White Modern Professional General Linkedin Banner(4).png" width="280"><br>
         Ali Zulfiqar
     </h3>
 </a>
