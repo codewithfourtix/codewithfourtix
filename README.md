@@ -1,52 +1,71 @@
-# Hi, I'm Ali Zulfiqar 👋
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=120&section=header"/>
 
-## About Me
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00bfbf&size=35&center=true&vCenter=true&width=1000&lines=Hello,+my+name+is+Rasul;Be+Welcome!+:%29)](https://git.io/typing-svg)
 
-- 🎓 Currently pursuing a Bachelor’s in Computer Science at FAST University Lahore
-- 💻 I am a Full Stack Software Engineer
-- 🌟 Creator of [code_with_fourtix](https://www.instagram.com/code_with_fourtix) with over 92k followers
-- 🧩 Interested in building scalable SAAS products
+<a href="https://discord.gg/5dZPVytKnn">
+    <h3 align="center">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fkhi.nu.edu.pk%2F&psig=AOvVaw1t-XKgzb53sGiphj9FbGnS&ust=1754392075982000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIiiuvaB8Y4DFQAAAAAdAAAAABAE" width="280"><br>
+        Ali Zulfiqar
+    </h3>
+</a>
+Hi! I am a full stack web developer and AI enthusiast with hands-on experience building production-ready applications using React, Node.js, Express, and MongoDB. I specialize in integrating modern AI APIs like OpenAI, Google Gemini, and DeepSeek into real-world tools. I've developed chat apps, voice automation systems, and real-time collaborative editors. I'm also familiar with cloud hosting (Vercel, Netlify), database systems (MongoDB, Firebase, Supabase), and Git-based workflows. My goal is to build fast, functional, and scalable digital solutions that solve real problems.
 
-## Skills & Technologies
+### 📈 GitHub Activity Graph:
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="50" height="50"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="50" height="50"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="50" height="50"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50">
+<p align="center">
+  <a href="https://github.com/nnnLik">
+    <img align="center"
+         height="150em"
+         src="https://streak-stats.demolab.com?user=nnnLik&theme=aura&hide_border=false&border_radius=10" />
+  </a>
+</p>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="React" width="50" height="50"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-original.svg" alt="Ant Design" width="50" height="50"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" width="50" height="50"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="50" height="50">
+<p align="center">
+  <a href="https://github.com/nnnLik">
+    <img align="center"
+         height="150em"
+         src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nnnlik&theme=aura"
+    />
+  <a href="https://github.com/nnnLik">
+    <img align="center"
+         height="150em"
+         src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nnnlik&theme=aura"
+    />
+</p>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50" height="50"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" width="50" height="50"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="50" height="50"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" width="50" height="50">
+<p align="center">
+  <a href="https://github.com/nnnLik">
+    <img align="center"
+         height="150em"
+         src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=nnnlik&theme=aura"
+    />
+  <a href="https://github.com/nnnLik">
+    <img align="center"
+         height="150em"
+         src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=nnnlik&theme=aura&utcOffset=8"
+    />
+</p>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twilio/twilio-original.svg" alt="Twilio" width="50" height="50"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" alt="OpenAI" width="50" height="50"> <img src="https://avatars.githubusercontent.com/u/6250754?s=200&v=4" alt="Gemini" width="50" height="50"> <!-- No official devicon yet, using GitHub logo as placeholder -->
+<p align="center">
+ <a href="https://github.com/nnnLik">
+    <img align="center"
+         height="150em"
+         src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nnnLik&theme=aura"
+    />
+</p>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50" height="50"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="50" height="50">
+<div align="center">
+  <a href = "mailto:rslmakhmudov@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/makmdvra/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+  </a>
+  <a href="https://ko-fi.com/xionnnn" target="_blank"><img src="https://img.shields.io/badge/-Donat-%230077B5?style=for-the-badge&logo=donat&logoColor=Black" target="_blank"></a> 
+ </div>
+</p>
 
-## Connect with Me
+<div align="center">
+<br><p align="centre"><b>Visitors Count</b></p>  
+<p align="center"><img align="center" src="https://profile-counter.glitch.me/{nnnLik}/count.svg" /></p> 
+<br></div>
 
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/codewithfourtix/)
-- [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/alizulfiqar46)
-- [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/code_with_fourtix)
-
-## 🚀 GitHub Stats
-
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=codewithfourtix&show_icons=true&count_private=true&hide=prs&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=codewithfourtix&layout=compact&theme=tokyonight)
-
-![GitHub Streak](https://github-readme-streak-stats.vercel.app/?user=codewithfourtix&theme=tokyonight&hide_border=false)
-
-![Trophy](https://github-profile-trophy.vercel.app/?username=codewithfourtix&theme=tokyonight&column=7)
-
-## Technologies That I have worked with
-
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5.x-blueviolet)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-06B6D4)
-![C](https://img.shields.io/badge/C-Programming%20Language-blue)
-![C++](https://img.shields.io/badge/C++-Programming%20Language-brightgreen)
-![Ant Design](https://img.shields.io/badge/Ant%20Design-4.x-blue)
-![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC)
-![RapidAPI](https://img.shields.io/badge/RapidAPI-Toolkit-00A7D0)
-![React](https://img.shields.io/badge/React-16.8%2B-blue)
-![Node.js](https://img.shields.io/badge/Node.js-14.x-green)
-![Express.js](https://img.shields.io/badge/Express.js-4.x-black)
-![HTML](https://img.shields.io/badge/HTML-5-orange)
-![CSS](https://img.shields.io/badge/CSS-3-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
+<h2 align="center"> Thanks for visiting my profile. </h2>
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=120&section=footer"/>
