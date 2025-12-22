@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?color=00bfbf&size=30&center=true&vCenter=true&width=1000&lines=Full+Stack+Engineer;AI+Solutions+Architect;Building+the+Future+with+LLMs" />
+    <img src="https://readme-typing-svg.herokuapp.com/?color=00bfbf&size=30&center=true&vCenter=true&width=1000&lines=Full+Stack+Engineer;AI+Solutions+Architect;MERN+Stack+Expert;Building+with+OpenAI,+Gemini,+%26+DeepSeek" />
   </a>
 </p>
 
@@ -42,14 +42,23 @@ I am a **Full Stack Web Developer** and **AI Enthusiast** dedicated to building 
 
 ### 📊 GitHub Metrics
 
-<p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=codewithfourtix&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=codewithfourtix&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=codewithfourtix&theme=tokyonight&hide_border=true" />
-</p>
+<div align="center">
+  <table border="0">
+    <tr>
+      <td>
+        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=codewithfourtix&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+      </td>
+      <td>
+        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=codewithfourtix&layout=compact&theme=tokyonight&hide_border=true" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=codewithfourtix&theme=tokyonight&hide_border=true" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
@@ -61,7 +70,8 @@ I am a **Full Stack Web Developer** and **AI Enthusiast** dedicated to building 
 </p>
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/codewithfourtix/count.svg" />
+  <b>Profile Views</b><br>
+  <img src="https://komarev.com/ghpvc/?username=codewithfourtix&color=00bfbf&style=flat-square" />
 </p>
 
 <p align="center">
