@@ -1,71 +1,69 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=120&section=header"/>
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=00bfbf&size=35&center=true&vCenter=true&width=1000&lines=Hello,+my+name+is+Ali+Zulfiqar;Be+Welcome!+:%29)](https://git.io/typing-svg)
-
-<a href="https://discord.gg/5dZPVytKnn">
-    <h3 align="center">
-        <img src="Blue and White Modern Professional General Linkedin Banner(4).png" width="280"><br>
-        Ali Zulfiqar
-    </h3>
-</a>
-Hi! I am a full stack web developer and AI enthusiast with hands-on experience building production-ready applications using React, Node.js, Express, and MongoDB. I specialize in integrating modern AI APIs like OpenAI, Google Gemini, and DeepSeek into real-world tools. I've developed chat apps, voice automation systems, and real-time collaborative editors. I'm also familiar with cloud hosting (Vercel, Netlify), database systems (MongoDB, Firebase, Supabase), and Git-based workflows. My goal is to build fast, functional, and scalable digital solutions that solve real problems.
-
-### 📈 GitHub Activity Graph:
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=150&section=header&text=Ali%20Zulfiqar&fontSize=50&animation=fadeIn&fontAlignY=35" />
+</p>
 
 <p align="center">
-  <a href="https://github.com/codewithfourtix">
-    <img align="center"
-         height="150em"
-         src="https://streak-stats.demolab.com?user=codewithfourtix&theme=aura&hide_border=false&border_radius=10" />
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com/?color=00bfbf&size=30&center=true&vCenter=true&width=1000&lines=Full+Stack+Engineer;AI+Solutions+Architect;Building+the+Future+with+LLMs" />
   </a>
 </p>
 
+---
+
+### ⚡ About Me
+I am a **Full Stack Web Developer** and **AI Enthusiast** dedicated to building scalable, production-ready applications. I specialize in bridging the gap between traditional web architectures and modern AI capabilities.
+
+- 🤖 **AI Expertise:** Specialized in integrating **OpenAI**, **Google Gemini**, and **DeepSeek**.
+- 💻 **Full Stack:** Proficient in the **MERN** stack (MongoDB, Express, React, Node.js).
+- ☁️ **DevOps:** Experienced with Vercel, Netlify, and Firebase for seamless deployments.
+- 🚀 **Goal:** Creating fast, functional, and intelligent digital solutions.
+
+---
+
+### 🛠️ Tech Stack
+
+<p align="left">
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+  <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/mongodb-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" />
+</p>
+
+<p align="left">
+  <img src="https://img.shields.io/badge/OpenAI-412991.svg?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2.svg?style=for-the-badge&logo=googlegemini&logoColor=white" />
+  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/firebase-%23ffca28.svg?style=for-the-badge&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
+</p>
+
+---
+
+### 📊 GitHub Metrics
+
 <p align="center">
-  <a href="https://github.com/codewithfourtix">
-    <img align="center"
-         height="150em"
-         src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=codewithfourtix&theme=aura"
-    />
-  <a href="https://github.com/codewithfourtix">
-    <img align="center"
-         height="150em"
-         src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=codewithfourtix&theme=aura"
-    />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=codewithfourtix&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=codewithfourtix&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/codewithfourtix">
-    <img align="center"
-         height="150em"
-         src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=codewithfourtix&theme=aura"
-    />
-  <a href="https://github.com/codewithfourtix">
-    <img align="center"
-         height="150em"
-         src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=codewithfourtix&theme=aura&utcOffset=8"
-    />
+  <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=codewithfourtix&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+### 🤝 Connect with Me
+<p align="center">
+<a href="mailto:aalizulfiqar46@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/codewithfourtix/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://alizulfiqar.netlify.app"><img src="https://img.shields.io/badge/Portfolio-00bfbf?style=for-the-badge&logo=react&logoColor=white" /></a>
 </p>
 
 <p align="center">
- <a href="https://github.com/codewithfourtix">
-    <img align="center"
-         height="150em"
-         src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=codewithfourtix&theme=aura"
-    />
+  <img src="https://profile-counter.glitch.me/codewithfourtix/count.svg" />
 </p>
 
-<div align="center">
-  <a href = "mailto:aalizulfiqar46@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/codewithfourtix/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-  </a>
-<!--   <a href="https://ko-fi.com/xionnnn" target="_blank"><img src="https://img.shields.io/badge/-Donat-%230077B5?style=for-the-badge&logo=donat&logoColor=Black" target="_blank"></a>  -->
- </div>
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=100&section=footer" />
 </p>
-
-<div align="center">
-<br><p align="centre"><b>Visitors Count</b></p>  
-<p align="center"><img align="center" src="https://profile-counter.glitch.me/{codewithfourtix}/count.svg" /></p> 
-<br></div>
-
-<h2 align="center"> Thanks for visiting my profile. </h2>
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=120&section=footer"/>
