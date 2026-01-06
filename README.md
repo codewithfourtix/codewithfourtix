@@ -43,27 +43,6 @@ const developer = {
 </p>
 
 ---
-
-### 📊 GitHub Metrics
-
-<div align="center">
-  <table border="0">
-    <tr>
-      <td>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=codewithfourtix&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-      </td>
-      <td>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=codewithfourtix&layout=compact&theme=tokyonight&hide_border=true" />
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=codewithfourtix&theme=tokyonight&hide_border=true" />
-      </td>
-    </tr>
-  </table>
-</div>
-
 ---
 
 ### 🤝 Connect with Me
