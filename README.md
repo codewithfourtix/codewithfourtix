@@ -17,7 +17,7 @@
 ```javascript
 const developer = {
   name: "Ali Zulfiqar",
-  role: "Full Stack AI Engineer",
+  role: "Full Stack",
   location: "Lahore, Pakistan",
   specialty: ["LLM Integration", "Scalable Web Apps", "Automation"],
   motto: "Code is poetry, AI is the ink."
@@ -42,7 +42,6 @@ const developer = {
   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
----
 ---
 
 ### 🤝 Connect with Me
