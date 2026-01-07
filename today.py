@@ -364,16 +364,20 @@ def commit_counter(comment_size):
     Counts up my total commits, using the cache file created by cache_builder.
     """
     total_commits = 0
-    filename = 'cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt' # Use the same filename as cache_builder
-    with open(filename, 'r') as f:
-        data = f.readlines()
-    cache_comment = data[:comment_size] # save the comment block
-    data = data[comment_size:] # remove those lines
-    for line in data:
-        total_commits += int(line.split()[2])
+    filename = 'cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt'
+    try:
+        with open(filename, 'r') as f:
+            data = f.readlines()
+        cache_comment = data[:comment_size]
+        data = data[comment_size:]
+        for line in data:
+            total_commits += int(line.split()[2])
+    except FileNotFoundError:
+        # If the file doesn't exist yet, just return 0 instead of crashing
+        return 0
     return total_commits
 
-
+    
 def user_getter(username):
     """
     Returns the account ID and creation time of the user
