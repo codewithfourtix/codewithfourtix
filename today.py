@@ -322,8 +322,9 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     """
     tree = etree.parse(filename)
     root = tree.getroot()
-    justify_format(root, 'commit_data', commit_data, 22)
-    justify_format(root, 'star_data', star_data, 14)
+    justify_format(root, 'age_data', age_data, 22)
+    justify_format(root, 'commit_data', commit_data, 19)
+    justify_format(root, 'star_data', star_data, 13)
     justify_format(root, 'repo_data', repo_data, 6)
     justify_format(root, 'contrib_data', contrib_data)
     justify_format(root, 'follower_data', follower_data, 10)
@@ -331,7 +332,6 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     justify_format(root, 'loc_add', loc_data[0])
     justify_format(root, 'loc_del', loc_data[1], 7)
     tree.write(filename, encoding='utf-8', xml_declaration=True)
-
 
 def justify_format(root, element_id, new_text, length=0):
     """
@@ -358,26 +358,16 @@ def find_and_replace(root, element_id, new_text):
     if element is not None:
         element.text = new_text
 
-
 def commit_counter(comment_size):
-    """
-    Counts up my total commits, using the cache file created by cache_builder.
-    """
     total_commits = 0
     filename = 'cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt'
-    try:
-        with open(filename, 'r') as f:
-            data = f.readlines()
-        cache_comment = data[:comment_size]
-        data = data[comment_size:]
-        for line in data:
-            total_commits += int(line.split()[2])
-    except FileNotFoundError:
-        # If the file doesn't exist yet, just return 0 instead of crashing
-        return 0
+    if not os.path.exists(filename): return 0
+    with open(filename, 'r') as f:
+        data = f.readlines()
+    for line in data[comment_size:]:
+        total_commits += int(line.split()[2])
     return total_commits
 
-    
 def user_getter(username):
     """
     Returns the account ID and creation time of the user
@@ -453,7 +443,7 @@ if __name__ == '__main__':
     formatter('account data', user_time)
     age_data, age_time = perf_counter(daily_readme, datetime.datetime(2005, 7, 25))
     formatter('age calculation', age_time)
-    total_loc, loc_time = [0, 0, 0, True], 0
+    total_loc, loc_time = perf_counter(loc_query, ['OWNER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
     commit_data, commit_time = perf_counter(commit_counter, 7)
     star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
