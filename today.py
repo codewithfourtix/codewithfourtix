@@ -207,13 +207,13 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
     cached = True # Assume all repositories are cached
     filename = 'cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt' # Create a unique filename for each user
     try:
-        with open(filename, 'r') as f
+        with open(filename, 'r') as f:
             data = f.readlines()
     except FileNotFoundError: # If the cache file doesn't exist, create it
         data = []
         if comment_size > 0:
             for _ in range(comment_size): data.append('This line is a comment block. Write whatever you want here.\n')
-        with open(filename, 'w') as f
+        with open(filename, 'w') as f:
             f.writelines(data)
 
     if len(data)-comment_size != len(edges) or force_cache: # If the number of repos has changed, or force_cache is True
