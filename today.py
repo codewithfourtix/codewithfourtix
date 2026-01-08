@@ -317,20 +317,17 @@ def stars_counter(data):
 
 
 def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
-    """
-    Parse SVG files and update elements with my age, commits, stars, repositories, and lines written
-    """
     tree = etree.parse(filename)
     root = tree.getroot()
     justify_format(root, 'age_data', age_data, 22)
-    justify_format(root, 'commit_data', commit_data, 19)
-    justify_format(root, 'star_data', star_data, 13)
-    justify_format(root, 'repo_data', repo_data, 6)
+    justify_format(root, 'commit_data', commit_data, 17) # Adjusted for your SVG
+    justify_format(root, 'star_data', star_data, 11)   # Adjusted for your SVG
+    justify_format(root, 'repo_data', repo_data, 4)    # Adjusted for your SVG
     justify_format(root, 'contrib_data', contrib_data)
-    justify_format(root, 'follower_data', follower_data, 10)
-    justify_format(root, 'loc_data', loc_data[2], 9)
+    justify_format(root, 'follower_data', follower_data, 7) # Adjusted for your SVG
+    justify_format(root, 'loc_data', loc_data[2], 1)
     justify_format(root, 'loc_add', loc_data[0])
-    justify_format(root, 'loc_del', loc_data[1], 7)
+    justify_format(root, 'loc_del', loc_data[1], 1)
     tree.write(filename, encoding='utf-8', xml_declaration=True)
 
 def justify_format(root, element_id, new_text, length=0):
@@ -451,8 +448,7 @@ if __name__ == '__main__':
     contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
     follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
 
-    # several repositories that I've contributed to have since been deleted.
-    if OWNER_ID == {'id': 'MDQ6VXNlcjU3MzMxMTM0'}: # only calculate for user Andrew6rant
+    if True: 
         archived_data = add_archive()
         for index in range(len(total_loc)-1):
             total_loc[index] += archived_data[index]
