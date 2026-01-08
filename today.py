@@ -5,7 +5,6 @@ import os
 from lxml import etree
 import time
 import hashlib
-from datetime import timezone
 
 # Fine-grained personal access token with All Repositories access:
 # Account permissions: read:Followers, read:Starring, read:Watching
@@ -16,12 +15,12 @@ USER_NAME = os.environ['USER_NAME'] # 'codewithfourtix'
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
-def daily_readme(join_date):
+def daily_readme(birthday):
     """
-    Returns the length of time since the account was created
+    Returns the length of time since I was born
     e.g. 'XX years, XX months, XX days'
     """
-    diff = relativedelta.relativedelta(datetime.datetime.now(timezone.utc), join_date)
+    diff = relativedelta.relativedelta(datetime.datetime.today(), birthday)
     return '{} {}, {} {}, {} {}{}'.format(
         diff.years, 'year' + format_plural(diff.years), 
         diff.months, 'month' + format_plural(diff.months), 
@@ -49,24 +48,6 @@ def simple_request(func_name, query, variables):
     if request.status_code == 200:
         return request
     raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
-
-
-def graph_commits(start_date, end_date):
-    """
-    Uses GitHub's GraphQL v4 API to return total commit contributions since account creation.
-    """
-    query_count('graph_commits')
-    query = '''
-    query($start_date: DateTime!, $end_date: DateTime!, $login: String!) {
-        user(login: $login) {
-            contributionsCollection(from: $start_date, to: $end_date) {
-                totalCommitContributions
-            }
-        }
-    }'''
-    variables = {'start_date': start_date,'end_date': end_date, 'login': USER_NAME}
-    request = simple_request(graph_commits.__name__, query, variables)
-    return int(request.json()['data']['user']['contributionsCollection']['totalCommitContributions'])
 
 
 def graph_repos_stars(count_type, owner_affiliation, cursor=None, total=0):
@@ -163,7 +144,7 @@ def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, additio
     only adds the LOC value of commits authored by me
     """
     for node in history['edges']:
-        if node['node']['author']['user'] == OWNER_ID['id']:  # Fixed to use OWNER_ID['id']
+        if node['node']['author']['user'] == OWNER_ID:
             my_commits += 1
             addition_total += node['node']['additions']
             deletion_total += node['node']['deletions']
@@ -226,13 +207,13 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
     cached = True # Assume all repositories are cached
     filename = 'cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt' # Create a unique filename for each user
     try:
-        with open(filename, 'r') as f:
+        with open(filename, 'r') as f
             data = f.readlines()
     except FileNotFoundError: # If the cache file doesn't exist, create it
         data = []
         if comment_size > 0:
             for _ in range(comment_size): data.append('This line is a comment block. Write whatever you want here.\n')
-        with open(filename, 'w') as f:
+        with open(filename, 'w') as f
             f.writelines(data)
 
     if len(data)-comment_size != len(edges) or force_cache: # If the number of repos has changed, or force_cache is True
@@ -316,7 +297,7 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
 
 def justify_format(root, element_id, new_text, length=0):
     """
-    Updates and formats the text of the element, and modifes the amount of dots in the previous element to justify the new text on the svg
+    Updates and formats the text of the element, and modifies the amount of dots in the previous element to justify the new text on the svg
     """
     if isinstance(new_text, int):
         new_text = f"{'{:,}'.format(new_text)}"
@@ -338,6 +319,17 @@ def find_and_replace(root, element_id, new_text):
     element = root.find(f".//*[@id='{element_id}']")
     if element is not None:
         element.text = new_text
+
+
+def commit_counter(comment_size):
+    total_commits = 0
+    filename = 'cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt'
+    if not os.path.exists(filename): return 0
+    with open(filename, 'r') as f:
+        data = f.readlines()
+    for line in data[comment_size:]:
+        total_commits += int(line.split()[2])
+    return total_commits
 
 
 def user_getter(username):
@@ -406,19 +398,19 @@ def formatter(query_type, difference, funct_return=False, whitespace=0):
 
 if __name__ == '__main__':
     """
-    Adapted from Andrew Grant (Andrew6rant), 2022-2025
+    Andrew Grant (Andrew6rant), 2022-2025
     """
     print('Calculation times:')
     # define global variable for owner ID and calculate user's creation date
+    # e.g {'id': 'MDQ6VXNlcjU3MzMxMTM0'} and 2019-11-03T21:15:07Z for username 'Andrew6rant'
     user_data, user_time = perf_counter(user_getter, USER_NAME)
     OWNER_ID, acc_date = user_data
     formatter('account data', user_time)
-    join_date = datetime.datetime.fromisoformat(acc_date.replace('Z', '+00:00'))
-    age_data, age_time = perf_counter(daily_readme, join_date)
+    age_data, age_time = perf_counter(daily_readme, datetime.datetime(2005, 7, 25)) # CHANGE THIS TO YOUR BIRTHDAY, e.g. datetime.datetime(2000, 1, 1)
     formatter('age calculation', age_time)
     total_loc, loc_time = perf_counter(loc_query, ['OWNER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
-    commit_data, commit_time = perf_counter(graph_commits, acc_date, datetime.datetime.now(timezone.utc).isoformat() + 'Z')
+    commit_data, commit_time = perf_counter(commit_counter, 7)
     formatter('commit data', commit_time)
     star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
     formatter('stars count', star_time)
