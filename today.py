@@ -160,7 +160,7 @@ if __name__ == '__main__':
     formatter('account data', user_time)
 
     # CHANGE THIS TO YOUR ACTUAL BIRTHDAY (year, month, day)
-    age_data, age_time = perf_counter(daily_readme, datetime.datetime(2000, 1, 1))  # <-- REPLACE HERE
+    age_data, age_time = perf_counter(daily_readme, datetime.datetime(2005, 7, 26)) 
     formatter('age calculation', age_time)
 
     # LOC disabled to avoid crashes
