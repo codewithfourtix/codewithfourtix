@@ -5,6 +5,7 @@ import os
 from lxml import etree
 import time
 import hashlib
+from datetime import timezone
 
 # Fine-grained personal access token with All Repositories access:
 # Account permissions: read:Followers, read:Starring, read:Watching
@@ -20,7 +21,7 @@ def daily_readme(join_date):
     Returns the length of time since the account was created
     e.g. 'XX years, XX months, XX days'
     """
-    diff = relativedelta.relativedelta(datetime.datetime.today(), join_date)
+    diff = relativedelta.relativedelta(datetime.datetime.now(timezone.utc), join_date)
     return '{} {}, {} {}, {} {}{}'.format(
         diff.years, 'year' + format_plural(diff.years), 
         diff.months, 'month' + format_plural(diff.months), 
@@ -417,7 +418,7 @@ if __name__ == '__main__':
     formatter('age calculation', age_time)
     total_loc, loc_time = perf_counter(loc_query, ['OWNER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
-    commit_data, commit_time = perf_counter(graph_commits, acc_date, datetime.datetime.now().isoformat())
+    commit_data, commit_time = perf_counter(graph_commits, acc_date, datetime.datetime.now(timezone.utc).isoformat() + 'Z')
     formatter('commit data', commit_time)
     star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
     formatter('stars count', star_time)
