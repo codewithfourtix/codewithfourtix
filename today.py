@@ -11,16 +11,16 @@ import hashlib
 # Repository permissions: read:Commit statuses, read:Contents, read:Issues, read:Metadata, read:Pull Requests
 # Issues and pull requests permissions not needed at the moment, but may be used in the future
 HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-USER_NAME = os.environ['USER_NAME'] # 'Andrew6rant'
+USER_NAME = os.environ['USER_NAME'] # 'codewithfourtix'
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
-def daily_readme(birthday):
+def daily_readme(join_date):
     """
-    Returns the length of time since I was born
+    Returns the length of time since the account was created
     e.g. 'XX years, XX months, XX days'
     """
-    diff = relativedelta.relativedelta(datetime.datetime.today(), birthday)
+    diff = relativedelta.relativedelta(datetime.datetime.today(), join_date)
     return '{} {}, {} {}, {} {}{}'.format(
         diff.years, 'year' + format_plural(diff.years), 
         diff.months, 'month' + format_plural(diff.months), 
@@ -52,27 +52,25 @@ def simple_request(func_name, query, variables):
 
 def graph_commits(start_date, end_date):
     """
-    Uses GitHub's GraphQL v4 API to return my total commit count
+    Uses GitHub's GraphQL v4 API to return total commit contributions since account creation.
     """
     query_count('graph_commits')
     query = '''
     query($start_date: DateTime!, $end_date: DateTime!, $login: String!) {
         user(login: $login) {
             contributionsCollection(from: $start_date, to: $end_date) {
-                contributionCalendar {
-                    totalContributions
-                }
+                totalCommitContributions
             }
         }
     }'''
     variables = {'start_date': start_date,'end_date': end_date, 'login': USER_NAME}
     request = simple_request(graph_commits.__name__, query, variables)
-    return int(request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
+    return int(request.json()['data']['user']['contributionsCollection']['totalCommitContributions'])
 
 
-def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del_loc=0):
+def graph_repos_stars(count_type, owner_affiliation, cursor=None, total=0):
     """
-    Uses GitHub's GraphQL v4 API to return my total repository, star, or lines of code count.
+    Uses GitHub's GraphQL v4 API to return total repository or star count, with pagination support for stars.
     """
     query_count('graph_repos_stars')
     query = '''
@@ -99,11 +97,14 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
     }'''
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
     request = simple_request(graph_repos_stars.__name__, query, variables)
-    if request.status_code == 200:
-        if count_type == 'repos':
-            return request.json()['data']['user']['repositories']['totalCount']
-        elif count_type == 'stars':
-            return stars_counter(request.json()['data']['user']['repositories']['edges'])
+    data = request.json()['data']['user']['repositories']
+    if count_type == 'repos':
+        return data['totalCount']
+    elif count_type == 'stars':
+        total += stars_counter(data['edges'])
+        if data['pageInfo']['hasNextPage']:
+            return graph_repos_stars(count_type, owner_affiliation, data['pageInfo']['endCursor'], total)
+        return total
 
 
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
@@ -161,7 +162,7 @@ def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, additio
     only adds the LOC value of commits authored by me
     """
     for node in history['edges']:
-        if node['node']['author']['user'] == OWNER_ID:
+        if node['node']['author']['user'] == OWNER_ID['id']:  # Fixed to use OWNER_ID['id']
             my_commits += 1
             addition_total += node['node']['additions']
             deletion_total += node['node']['deletions']
@@ -198,6 +199,7 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
                             }
                         }
                     }
+                }
                 }
                 pageInfo {
                     endCursor
@@ -276,25 +278,6 @@ def flush_cache(edges, filename, comment_size):
             f.write(hashlib.sha256(node['node']['nameWithOwner'].encode('utf-8')).hexdigest() + ' 0 0 0 0\n')
 
 
-def add_archive():
-    """
-    Several repositories I have contributed to have since been deleted.
-    This function adds them using their last known data
-    """
-    with open('cache/repository_archive.txt', 'r') as f:
-        data = f.readlines()
-    old_data = data
-    data = data[7:len(data)-3] # remove the comment block    
-    added_loc, deleted_loc, added_commits = 0, 0, 0
-    contributed_repos = len(data)
-    for line in data:
-        repo_hash, total_commits, my_commits, *loc = line.split()
-        added_loc += int(loc[0])
-        deleted_loc += int(loc[1])
-        if (my_commits.isdigit()): added_commits += int(my_commits)
-    added_commits += int(old_data[-1].split()[4][:-1])
-    return [added_loc, deleted_loc, added_loc - deleted_loc, added_commits, contributed_repos]
-
 def force_close_file(data, cache_comment):
     """
     Forces the file to close, preserving whatever data was written to it
@@ -355,15 +338,6 @@ def find_and_replace(root, element_id, new_text):
     if element is not None:
         element.text = new_text
 
-def commit_counter(comment_size):
-    total_commits = 0
-    filename = 'cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt'
-    if not os.path.exists(filename): return 0
-    with open(filename, 'r') as f:
-        data = f.readlines()
-    for line in data[comment_size:]:
-        total_commits += int(line.split()[2])
-    return total_commits
 
 def user_getter(username):
     """
@@ -380,6 +354,7 @@ def user_getter(username):
     variables = {'login': username}
     request = simple_request(user_getter.__name__, query, variables)
     return {'id': request.json()['data']['user']['id']}, request.json()['data']['user']['createdAt']
+
 
 def follower_getter(username):
     """
@@ -430,30 +405,28 @@ def formatter(query_type, difference, funct_return=False, whitespace=0):
 
 if __name__ == '__main__':
     """
-    Andrew Grant (Andrew6rant), 2022-2025
+    Adapted from Andrew Grant (Andrew6rant), 2022-2025
     """
     print('Calculation times:')
     # define global variable for owner ID and calculate user's creation date
-    # e.g {'id': 'MDQ6VXNlcjU3MzMxMTM0'} and 2019-11-03T21:15:07Z for username 'Andrew6rant'
     user_data, user_time = perf_counter(user_getter, USER_NAME)
     OWNER_ID, acc_date = user_data
     formatter('account data', user_time)
-    age_data, age_time = perf_counter(daily_readme, datetime.datetime(2005, 7, 25))
+    join_date = datetime.datetime.fromisoformat(acc_date.replace('Z', '+00:00'))
+    age_data, age_time = perf_counter(daily_readme, join_date)
     formatter('age calculation', age_time)
     total_loc, loc_time = perf_counter(loc_query, ['OWNER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
-    commit_data, commit_time = perf_counter(commit_counter, 7)
+    commit_data, commit_time = perf_counter(graph_commits, acc_date, datetime.datetime.now().isoformat())
+    formatter('commit data', commit_time)
     star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
+    formatter('stars count', star_time)
     repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
+    formatter('repos count', repo_time)
     contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
+    formatter('contributed repos', contrib_time)
     follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
-
-    if True: 
-        archived_data = add_archive()
-        for index in range(len(total_loc)-1):
-            total_loc[index] += archived_data[index]
-        contrib_data += archived_data[-1]
-        commit_data += int(archived_data[-2])
+    formatter('followers count', follower_time)
 
     for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index]) # format added, deleted, and total LOC
 
@@ -461,9 +434,10 @@ if __name__ == '__main__':
     svg_overwrite('light_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
 
     # move cursor to override 'Calculation times:' with 'Total function time:' and the total function time, then move cursor back
-    print('\033[F\033[F\033[F\033[F\033[F\033[F\033[F\033[F',
-        '{:<21}'.format('Total function time:'), '{:>11}'.format('%.4f' % (user_time + age_time + loc_time + commit_time + star_time + repo_time + contrib_time)),
-        ' s \033[E\033[E\033[E\033[E\033[E\033[E\033[E\033[E', sep='')
+    total_func_time = user_time + age_time + loc_time + commit_time + star_time + repo_time + contrib_time + follower_time
+    print('\033[F\033[F\033[F\033[F\033[F\033[F\033[F\033[F\033[F\033[F',
+        '{:<21}'.format('Total function time:'), '{:>11}'.format('%.4f' % total_func_time),
+        ' s \033[E\033[E\033[E\033[E\033[E\033[E\033[E\033[E\033[E\033[E', sep='')
 
     print('Total GitHub GraphQL API calls:', '{:>3}'.format(sum(QUERY_COUNT.values())))
     for funct_name, count in QUERY_COUNT.items(): print('{:<28}'.format('   ' + funct_name + ':'), '{:>6}'.format(count))
