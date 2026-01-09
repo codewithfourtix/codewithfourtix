@@ -68,20 +68,24 @@ def stars_counter(data):
     return total_stars
 
 def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
-    tree = etree.parse(filename)
-    root = tree.getroot()
-    
-    justify_format(root, 'age_data', age_data, 45)       # Was 22
-    justify_format(root, 'commit_data', commit_data, 35) # Was 17
-    justify_format(root, 'star_data', star_data, 25)     # Was 11
-    justify_format(root, 'repo_data', repo_data, 20)     # Was 4
-    justify_format(root, 'contrib_data', contrib_data, 20) # Added 20 for contributed repos
-    justify_format(root, 'follower_data', follower_data, 20) # Was 7
-    
-    justify_format(root, 'loc_data', loc_data[2], 1)
-    justify_format(root, 'loc_add', loc_data[0])
-    justify_format(root, 'loc_del', loc_data[1], 1)
-    tree.write(filename, encoding='utf-8', xml_declaration=True)
+    try:
+        tree = etree.parse(filename)
+        root = tree.getroot()
+        
+        justify_format(root, 'age_data', age_data, 45)       
+        justify_format(root, 'commit_data', commit_data, 35) 
+        justify_format(root, 'star_data', star_data, 25)     
+        justify_format(root, 'repo_data', repo_data, 20)     
+        justify_format(root, 'contrib_data', contrib_data, 20) 
+        justify_format(root, 'follower_data', follower_data, 20) 
+        
+        justify_format(root, 'loc_data', loc_data[2], 10)
+        justify_format(root, 'loc_add', loc_data[0], 10)
+        justify_format(root, 'loc_del', loc_data[1], 10)
+        
+        tree.write(filename, encoding='utf-8', xml_declaration=True)
+    except Exception as e:
+        print(f"❌ Error updating {filename}: {e}")
 
 
 def justify_format(root, element_id, new_text, length=0):
@@ -200,3 +204,4 @@ if __name__ == '__main__':
     for funct_name, count in QUERY_COUNT.items():
 
         print('{:<28}'.format('   ' + funct_name + ':'), '{:>6}'.format(count))
+
