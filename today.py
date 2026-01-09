@@ -72,21 +72,24 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
         tree = etree.parse(filename)
         root = tree.getroot()
         
+        # Keep Uptime dots at 45 to maintain your current look
         justify_format(root, 'age_data', age_data, 45)       
-        justify_format(root, 'commit_data', commit_data, 35) 
-        justify_format(root, 'star_data', star_data, 25)     
-        justify_format(root, 'repo_data', repo_data, 20)     
-        justify_format(root, 'contrib_data', contrib_data, 20) 
-        justify_format(root, 'follower_data', follower_data, 20) 
         
-        justify_format(root, 'loc_data', loc_data[2], 10)
+        # Increase these values to ~70-80 to push stats to the extreme right
+        justify_format(root, 'commit_data', commit_data, 80) 
+        justify_format(root, 'star_data', star_data, 25)     # Adjust based on column width
+        justify_format(root, 'repo_data', repo_data, 80)     
+        justify_format(root, 'contrib_data', contrib_data, 80) 
+        justify_format(root, 'follower_data', follower_data, 25) 
+        
+        # LOC data often needs shorter lengths if on a shared line
+        justify_format(root, 'loc_data', loc_data[2], 15)
         justify_format(root, 'loc_add', loc_data[0], 10)
         justify_format(root, 'loc_del', loc_data[1], 10)
         
         tree.write(filename, encoding='utf-8', xml_declaration=True)
     except Exception as e:
         print(f"❌ Error updating {filename}: {e}")
-
 
 def justify_format(root, element_id, new_text, length=0):
     if isinstance(new_text, int):
@@ -204,4 +207,5 @@ if __name__ == '__main__':
     for funct_name, count in QUERY_COUNT.items():
 
         print('{:<28}'.format('   ' + funct_name + ':'), '{:>6}'.format(count))
+
 
