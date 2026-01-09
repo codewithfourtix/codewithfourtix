@@ -68,3 +68,19 @@
 
 </td></tr>
 </table>
+
+<br/>
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=45A1FF&center=true&vCenter=true&width=435&lines=🚀+Open+Source+Contributor;🛠️+Building+Scalable+AI+Apps;📦+Passionate+about+Automation;✨+Always+Learning+New+Tech" alt="Typing SVG" />
+</div>
+
+### 📈 My Open Source Contributions
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=codewithfourtix&theme=react-dark&hide_border=true&area=true" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/codewithfourtix/codewithfourtix/output/github-contribution-grid-snake.svg" alt="Contribution Snake" />
+</p>
