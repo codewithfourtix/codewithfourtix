@@ -64,7 +64,10 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, total=0):
 
 def stars_counter(data):
     total_stars = 0
-    for node in data: total_stars += node['node']['stargazers']['totalCount']
+    for edge in data:
+        if edge is None or edge['node'] is None:
+            continue
+        total_stars += edge['node']['stargazers']['totalCount']
     return total_stars
 
 def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
