@@ -81,7 +81,7 @@
 
 I contribute fixes, regression tests, and documentation to projects I use and explore. Here’s the work, with every pull request linked to its review and outcome.
 
-**[All public PRs](https://github.com/pulls?q=is%3Apr+author%3Acodewithfourtix+is%3Apublic)** · **[Merged](https://github.com/pulls?q=is%3Apr+author%3Acodewithfourtix+is%3Amerged+is%3Apublic)** · **[Open](https://github.com/pulls?q=is%3Apr+author%3Acodewithfourtix+is%3Aopen+is%3Apublic)** · **[Closed](https://github.com/pulls?q=is%3Apr+author%3Acodewithfourtix+is%3Aclosed+is%3Aunmerged+is%3Apublic)**
+**[All public PRs](https://github.com/search?q=is%3Apr+author%3Acodewithfourtix+is%3Apublic&type=pullrequests)** · **[Merged](https://github.com/search?q=is%3Apr+author%3Acodewithfourtix+is%3Amerged+is%3Apublic&type=pullrequests)** · **[Open](https://github.com/search?q=is%3Apr+author%3Acodewithfourtix+is%3Aopen+is%3Apublic&type=pullrequests)** · **[Closed](https://github.com/search?q=is%3Apr+author%3Acodewithfourtix+is%3Aclosed+is%3Aunmerged+is%3Apublic&type=pullrequests)**
 
 ### Merged into the community
 
