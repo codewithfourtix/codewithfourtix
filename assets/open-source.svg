@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="328" viewBox="0 0 1120 328" role="img" aria-labelledby="title desc">
+<title id="title">Building in the open</title>
+<desc id="desc">79 public pull requests across 26 repositories. 24 merged, 53 open, 2 closed. Snapshot: September 5, 2026.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e34"/><stop offset="1" stop-color="#08111f"/></linearGradient><linearGradient id="accent"><stop stop-color="#52d9f4"/><stop offset="1" stop-color="#8b8cff"/></linearGradient></defs>
+<rect width="1120" height="328" rx="20" fill="url(#bg)"/>
+<rect x="1" y="1" width="1118" height="326" rx="19" fill="none" stroke="#293b54"/>
+<g fill="none" stroke="#314666" stroke-width="1.5" opacity=".65"><path d="M846 44h78v46h90v56h76"/><path d="M862 78h30v72h156"/><circle cx="846" cy="44" r="5" fill="#52d9f4"/><circle cx="1014" cy="90" r="5" fill="#8b8cff"/><circle cx="1048" cy="150" r="5" fill="#52d9f4"/></g>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+<text x="44" y="47" fill="#69dff2" font-size="12" font-weight="700" letter-spacing="3">OPEN SOURCE / CONTRIBUTION LOG</text>
+<text x="44" y="106" fill="#f2f6fc" font-size="43" font-weight="700" letter-spacing="-1.5">Building in the open.</text>
+<text x="46" y="142" fill="#adc0d9" font-size="17">Code, fixes &amp; ideas — tracked in public.</text>
+<rect x="44" y="170" width="1032" height="2" fill="#253650"/>
+<rect x="44" y="170" width="134" height="2" fill="url(#accent)"/>
+<text x="46" y="232" fill="#f2f6fc" font-size="38" font-weight="700">79</text><text x="46" y="260" fill="#adc0d9" font-size="13">PUBLIC PULL REQUESTS</text>
+<text x="323" y="232" fill="#c4a7ff" font-size="38" font-weight="700">24</text><text x="323" y="260" fill="#adc0d9" font-size="13">MERGED</text>
+<text x="588" y="232" fill="#73e1b1" font-size="38" font-weight="700">53</text><text x="588" y="260" fill="#adc0d9" font-size="13">OPEN</text>
+<text x="852" y="232" fill="#8bc8ff" font-size="38" font-weight="700">26</text><text x="852" y="260" fill="#adc0d9" font-size="13">REPOSITORIES</text>
+<text x="46" y="304" fill="#94a9c5" font-size="11">PUBLIC ACTIVITY ONLY · 2 CLOSED WITHOUT MERGE · UPDATED SEP 05, 2026</text>
+</g></svg>
