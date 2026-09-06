@@ -71,15 +71,11 @@
 
 <br/>
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=45A1FF&center=true&vCenter=true&width=435&lines=+Open+Source+Contributor;+Building+Scalable+AI+Apps;+Passionate+about+world+better+place;+Always+Learning+New+Tech" alt="Typing SVG" />
-</div>
-
 ## Open source
 
-<img src="assets/open-source.svg" width="100%" alt="79 public PRs: 24 merged, 53 open, 2 closed, across 26 repositories. Updated September 5, 2026." />
+<img src="assets/open-source.svg" width="100%" alt="Upstream log: google-deepmind/open_spiel #1602 approved, aboutcode-org/scancode-toolkit #5260 in review, google-deepmind/concordia #276 merged. 24 of 79 public pull requests merged across 26 repositories." />
 
-I contribute fixes, regression tests, and documentation to projects I use and explore. Here’s the work, with every pull request linked to its review and outcome.
+Mostly bug fixes in projects I actually use. Every PR below links to its review.
 
 **[All public PRs](https://github.com/search?q=is%3Apr+author%3Acodewithfourtix+is%3Apublic&type=pullrequests)** · **[Merged](https://github.com/search?q=is%3Apr+author%3Acodewithfourtix+is%3Amerged+is%3Apublic&type=pullrequests)** · **[Open](https://github.com/search?q=is%3Apr+author%3Acodewithfourtix+is%3Aopen+is%3Apublic&type=pullrequests)** · **[Closed](https://github.com/search?q=is%3Apr+author%3Acodewithfourtix+is%3Aclosed+is%3Aunmerged+is%3Apublic&type=pullrequests)**
 

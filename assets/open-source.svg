@@ -1,19 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="328" viewBox="0 0 1120 328" role="img" aria-labelledby="title desc">
-<title id="title">Building in the open</title>
-<desc id="desc">79 public pull requests across 26 repositories. 24 merged, 53 open, 2 closed. Snapshot: September 5, 2026.</desc>
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e34"/><stop offset="1" stop-color="#08111f"/></linearGradient><linearGradient id="accent"><stop stop-color="#52d9f4"/><stop offset="1" stop-color="#8b8cff"/></linearGradient></defs>
-<rect width="1120" height="328" rx="20" fill="url(#bg)"/>
-<rect x="1" y="1" width="1118" height="326" rx="19" fill="none" stroke="#293b54"/>
-<g fill="none" stroke="#314666" stroke-width="1.5" opacity=".65"><path d="M846 44h78v46h90v56h76"/><path d="M862 78h30v72h156"/><circle cx="846" cy="44" r="5" fill="#52d9f4"/><circle cx="1014" cy="90" r="5" fill="#8b8cff"/><circle cx="1048" cy="150" r="5" fill="#52d9f4"/></g>
-<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
-<text x="44" y="47" fill="#69dff2" font-size="12" font-weight="700" letter-spacing="3">OPEN SOURCE / CONTRIBUTION LOG</text>
-<text x="44" y="106" fill="#f2f6fc" font-size="43" font-weight="700" letter-spacing="-1.5">Building in the open.</text>
-<text x="46" y="142" fill="#adc0d9" font-size="17">Code, fixes &amp; ideas — tracked in public.</text>
-<rect x="44" y="170" width="1032" height="2" fill="#253650"/>
-<rect x="44" y="170" width="134" height="2" fill="url(#accent)"/>
-<text x="46" y="232" fill="#f2f6fc" font-size="38" font-weight="700">79</text><text x="46" y="260" fill="#adc0d9" font-size="13">PUBLIC PULL REQUESTS</text>
-<text x="323" y="232" fill="#c4a7ff" font-size="38" font-weight="700">24</text><text x="323" y="260" fill="#adc0d9" font-size="13">MERGED</text>
-<text x="588" y="232" fill="#73e1b1" font-size="38" font-weight="700">53</text><text x="588" y="260" fill="#adc0d9" font-size="13">OPEN</text>
-<text x="852" y="232" fill="#8bc8ff" font-size="38" font-weight="700">26</text><text x="852" y="260" fill="#adc0d9" font-size="13">REPOSITORIES</text>
-<text x="46" y="304" fill="#94a9c5" font-size="11">PUBLIC ACTIVITY ONLY · 2 CLOSED WITHOUT MERGE · UPDATED SEP 05, 2026</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="336" viewBox="0 0 1120 336" role="img" aria-labelledby="t d">
+<title id="t">Open source contribution log</title>
+<desc id="d">Selected upstream work: open_spiel #1602 approved, scancode-toolkit #5260 in review, concordia #276 merged. 24 of 79 public pull requests merged across 26 repositories, as of September 5 2026.</desc>
+<style>
+  .m{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+  .lbl{font-size:11px;letter-spacing:1.6px;fill:#6b6864}
+  .repo{font-size:16px;fill:#eceae6}
+  .num{font-size:16px;fill:#8a8681}
+  .desc{font-size:13px;fill:#8a8681}
+  .st{font-size:11px;letter-spacing:1.2px}
+</style>
+<rect width="1120" height="336" rx="14" fill="#0a0a0b"/>
+<rect x=".5" y=".5" width="1119" height="335" rx="13.5" fill="none" stroke="#1c1b19"/>
+
+<text class="m lbl" x="40" y="38">UPSTREAM LOG</text>
+<text class="m lbl" x="1080" y="38" text-anchor="end">2026-09-05</text>
+<rect x="40" y="54" width="1040" height="1" fill="#1c1b19"/>
+
+<g transform="translate(0,92)">
+  <rect x="40" y="-16" width="2" height="42" fill="#c2653a"/>
+  <text class="m repo" x="60" y="0">google-deepmind/open_spiel</text>
+  <text class="m num" x="428" y="0">#1602</text>
+  <text class="m st" x="1080" y="0" text-anchor="end" fill="#c2653a">APPROVED</text>
+  <text class="m desc" x="60" y="22">out-of-bounds write corrupting the stack — open since Aug 2025, confirmed with ASAN</text>
+</g>
+
+<g transform="translate(0,168)">
+  <rect x="40" y="-16" width="2" height="42" fill="#c2653a"/>
+  <text class="m repo" x="60" y="0">aboutcode-org/scancode-toolkit</text>
+  <text class="m num" x="428" y="0">#5260</text>
+  <text class="m st" x="1080" y="0" text-anchor="end" fill="#6b6864">IN REVIEW</text>
+  <text class="m desc" x="60" y="22">pdf text extraction stopped after page one — regression traced to #4606</text>
+</g>
+
+<g transform="translate(0,244)">
+  <rect x="40" y="-16" width="2" height="42" fill="#2e2c29"/>
+  <text class="m repo" x="60" y="0">google-deepmind/concordia</text>
+  <text class="m num" x="428" y="0">#276</text>
+  <text class="m st" x="1080" y="0" text-anchor="end" fill="#6b6864">MERGED</text>
+  <text class="m desc" x="60" y="22">docstring and package description corrections</text>
+</g>
+
+<rect x="40" y="288" width="1040" height="1" fill="#1c1b19"/>
+<text class="m lbl" x="40" y="312">24 MERGED OF 79 PUBLIC PRS · 26 REPOSITORIES</text>
+<text class="m lbl" x="1080" y="312" text-anchor="end">FULL LOG BELOW</text>
+</svg>
