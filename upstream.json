@@ -1,0 +1,40 @@
+{
+  "user": "codewithfourtix",
+  "landed": {
+    "google-deepmind/concordia#299": "merged via Copybara",
+    "google-deepmind/concordia#300": "merged via Copybara",
+    "google-deepmind/open_spiel#1602": "merged by a maintainer"
+  },
+  "coauthored": {
+    "mahmoud/boltons#463": "mahmoud/boltons#481",
+    "mahmoud/boltons#466": "mahmoud/boltons#481"
+  },
+  "organizations": [
+    {"name": "xAI", "repos": ["xai-org/"], "logo": "xai-org"},
+    {"name": "Google DeepMind", "repos": ["google-deepmind/"], "logo": "google-deepmind"},
+    {"name": "NVIDIA", "repos": ["NVIDIA/"], "logo": "NVIDIA"},
+    {"name": "Microsoft", "repos": ["microsoft/"], "logo": "microsoft"},
+    {"name": "OpenAI", "repos": ["openai/"], "logo": "openai"},
+    {"name": "Google", "repos": ["google/", "google-gemini/"], "logo": "google"},
+    {"name": "Anthropic", "repos": ["anthropics/"], "logo": "anthropics"},
+    {"name": "Hugging Face", "repos": ["huggingface/"], "logo": "huggingface"},
+    {"name": "boltons", "repos": ["mahmoud/boltons"], "logo": null},
+    {"name": "AboutCode", "repos": ["aboutcode-org/"], "logo": "aboutcode-org"}
+  ],
+  "highlights": [
+    {"pr": "xai-org/xai-sdk-python#223", "says": "Made xAI's Python SDK compatible with protobuf 7."},
+    {"pr": "google-deepmind/open_spiel#1602", "says": "Fixed an out-of-bounds memory write in OpenSpiel's Dou Dizhu game."},
+    {"pr": "google-deepmind/concordia#299", "says": "Fixed nested data search ignoring an option and crashing on plain values."},
+    {"pr": "mahmoud/boltons#471", "says": "Fixed 9 bugs in boltons, from list slicing to seeking in JSONL streams."},
+    {"pr": "aboutcode-org/scancode-toolkit#5343", "says": "Fixed license scans missing Chinese and Japanese license texts."},
+    {"pr": "NVIDIA/garak#2383", "says": "Stopped garak's AI safety judge from losing the question it was grading."},
+    {"pr": "NVIDIA/NVTX#181", "says": "Profiled Python scripts now receive their own command-line arguments."},
+    {"pr": "microsoft/semantic-kernel#14698", "says": "Fixed NVIDIA model settings crashing every request in Semantic Kernel."},
+    {"pr": "microsoft/knack#309", "says": "Stopped non-English config values from being corrupted on Windows."},
+    {"pr": "openai/openai-dotnet#1456", "says": "Fixed finished fine-tuning jobs still showing Running in the .NET SDK."},
+    {"pr": "openai/tiktoken#611", "says": "Fixed a Windows crash when two processes fill the tokenizer cache at once."},
+    {"pr": "google-gemini/gemini-cli#29871", "says": "Stopped Gemini CLI losing tool results when it recovers from a loop."},
+    {"pr": "anthropics/anthropic-sdk-python#1913", "says": "Let developers clear a tool's description in Anthropic's Python SDK."},
+    {"pr": "huggingface/evaluate#808", "says": "Let evaluate save results on machines without Git installed."}
+  ]
+}
