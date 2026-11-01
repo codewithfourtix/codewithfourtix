@@ -11,7 +11,7 @@
 Mostly bug fixes in projects I actually use.
 
 <details>
-<summary><b>Every upstream pull request</b> (74)</summary>
+<summary><b>Every upstream pull request</b> (75)</summary>
 
 | Status | Repository | Pull request |
 | :--- | :--- | :--- |
@@ -59,6 +59,7 @@ Mostly bug fixes in projects I actually use.
 | open | aboutcode-org/scancode-toolkit | [#4784](https://github.com/aboutcode-org/scancode-toolkit/pull/4784) Fix empty range in terminate_pool_with_backoff making it a no-op |
 | open | aboutcode-org/scancode-toolkit | [#4783](https://github.com/aboutcode-org/scancode-toolkit/pull/4783) Fix incorrect timing parameter passed to run_scanners |
 | open | aboutcode-org/scancode-toolkit | [#4782](https://github.com/aboutcode-org/scancode-toolkit/pull/4782) Fix unreachable JSON validation code in validate_input_path |
+| open | aboutcode-org/scancode.io | [#2286](https://github.com/aboutcode-org/scancode.io/pull/2286) Ignore macOS .DS_Store files by default #1874 |
 | open | aboutcode-org/scancode.io | [#2253](https://github.com/aboutcode-org/scancode.io/pull/2253) Clone GitHub and GitLab repository URLs given as inputs |
 | open | anthropics/anthropic-sdk-python | [#1913](https://github.com/anthropics/anthropic-sdk-python/pull/1913) fix(tools): preserve an explicitly empty description |
 | open | google-deepmind/optax | [#1716](https://github.com/google-deepmind/optax/pull/1716) Fix ACProp second moment to use the new first moment |
