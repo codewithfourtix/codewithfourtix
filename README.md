@@ -11,7 +11,7 @@
 Mostly bug fixes in projects I actually use.
 
 <details>
-<summary><b>Every upstream pull request</b> (78)</summary>
+<summary><b>Every upstream pull request</b> (79)</summary>
 
 | Status | Repository | Pull request |
 | :--- | :--- | :--- |
@@ -64,6 +64,7 @@ Mostly bug fixes in projects I actually use.
 | open | aboutcode-org/scancode.io | [#2366](https://github.com/aboutcode-org/scancode.io/pull/2366) fix: preserve PURLs on CycloneDX dependencies |
 | open | aboutcode-org/scancode.io | [#2253](https://github.com/aboutcode-org/scancode.io/pull/2253) Clone GitHub and GitLab repository URLs given as inputs |
 | open | anthropics/anthropic-sdk-python | [#1913](https://github.com/anthropics/anthropic-sdk-python/pull/1913) fix(tools): preserve an explicitly empty description |
+| open | google-deepmind/concordia | [#475](https://github.com/google-deepmind/concordia/pull/475) Preserve memory text when restoring checkpoints |
 | open | google-deepmind/optax | [#1716](https://github.com/google-deepmind/optax/pull/1716) Fix ACProp second moment to use the new first moment |
 | open | google-deepmind/optax | [#1715](https://github.com/google-deepmind/optax/pull/1715) Fix incorrect (1 - b2) coefficient in scale_by_adan |
 | open | google-deepmind/regress-lm | [#139](https://github.com/google-deepmind/regress-lm/pull/139) docs: fix broken Extended Usage navigation link in README |
