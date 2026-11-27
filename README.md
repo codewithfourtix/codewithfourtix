@@ -4,14 +4,14 @@
 <a href="https://github.com/search?q=is%3Apr+author%3Acodewithfourtix+is%3Apublic&type=pullrequests">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/codewithfourtix/codewithfourtix/main/assets/upstream-dark.svg">
-    <img alt="Merged upstream. xAI: Made xAI&#x27;s Python SDK compatible with protobuf 7. Pull requests: xai-sdk-python #223. Google DeepMind: Fixed an out-of-bounds memory write in OpenSpiel&#x27;s Dou Dizhu game. Pull requests: concordia #276 #299 #300, open_spiel #1602. Microsoft: Fixed NVIDIA model settings crashing every request in Semantic Kernel. Pull requests: semantic-kernel #14698. boltons: Fixed 9 bugs in boltons, from list slicing to seeking in JSONL streams. Pull requests: 9 pull requests. AboutCode: Fixed license scans missing Chinese and Japanese license texts. Pull requests: scancode-toolkit #4781 #5343, scancode.io #2286 #2366. In review. NVIDIA: Stopped garak&#x27;s AI safety judge from losing the question it was grading. Pull requests: garak #2383, NVTX #181. OpenAI: Fixed finished fine-tuning jobs still showing Running in the .NET SDK. Pull requests: whisper #2846 #2847, openai-dotnet #1456, tiktoken #611. Google: fix(core): preserve configured MCP timeout during tool refresh Pull requests: etils #831, gemini-cli #30401, python-fire #704. Anthropic: Let developers clear a tool&#x27;s description in Anthropic&#x27;s Python SDK. Pull requests: anthropic-sdk-python #1913. Hugging Face: Let evaluate save results on machines without Git installed. Pull requests: evaluate #808 #809." src="https://raw.githubusercontent.com/codewithfourtix/codewithfourtix/main/assets/upstream-light.svg" width="100%">
+    <img alt="Merged upstream. xAI: Made xAI&#x27;s Python SDK compatible with protobuf 7. Pull requests: xai-sdk-python #223. Google DeepMind: Fixed an out-of-bounds memory write in OpenSpiel&#x27;s Dou Dizhu game. Pull requests: concordia #276 #299 #300, open_spiel #1602. Microsoft: Fixed NVIDIA model settings crashing every request in Semantic Kernel. Pull requests: semantic-kernel #14698. boltons: Fixed 9 bugs in boltons, from list slicing to seeking in JSONL streams. Pull requests: 9 pull requests. AboutCode: Fixed license scans missing Chinese and Japanese license texts. Pull requests: scancode-toolkit #4781 #5343, scancode.io #2286 #2366. In review. NVIDIA: Stopped garak&#x27;s AI safety judge from losing the question it was grading. Pull requests: garak #2383, NVTX #181. OpenAI: Fixed finished fine-tuning jobs still showing Running in the .NET SDK. Pull requests: whisper #2846 #2847, openai-dotnet #1456, tiktoken #611. Google: fix(cli): preserve history and stop replay when checkpoint restore fails Pull requests: gemini-cli #30401 #30496, etils #831, python-fire #704. Anthropic: Let developers clear a tool&#x27;s description in Anthropic&#x27;s Python SDK. Pull requests: anthropic-sdk-python #1913. Hugging Face: Let evaluate save results on machines without Git installed. Pull requests: evaluate #808 #809." src="https://raw.githubusercontent.com/codewithfourtix/codewithfourtix/main/assets/upstream-light.svg" width="100%">
   </picture>
 </a>
 
 Mostly bug fixes in projects I actually use.
 
 <details>
-<summary><b>Every upstream pull request</b> (81)</summary>
+<summary><b>Every upstream pull request</b> (83)</summary>
 
 | Status | Repository | Pull request |
 | :--- | :--- | :--- |
@@ -69,6 +69,7 @@ Mostly bug fixes in projects I actually use.
 | open | google-deepmind/optax | [#1716](https://github.com/google-deepmind/optax/pull/1716) Fix ACProp second moment to use the new first moment |
 | open | google-deepmind/optax | [#1715](https://github.com/google-deepmind/optax/pull/1715) Fix incorrect (1 - b2) coefficient in scale_by_adan |
 | open | google-deepmind/regress-lm | [#139](https://github.com/google-deepmind/regress-lm/pull/139) docs: fix broken Extended Usage navigation link in README |
+| open | google-gemini/gemini-cli | [#30496](https://github.com/google-gemini/gemini-cli/pull/30496) fix(cli): preserve history and stop replay when checkpoint restore fails |
 | open | google-gemini/gemini-cli | [#30401](https://github.com/google-gemini/gemini-cli/pull/30401) fix(core): preserve configured MCP timeout during tool refresh |
 | open | google-github-actions/run-gemini-cli | [#542](https://github.com/google-github-actions/run-gemini-cli/pull/542) fix: install extensions with non-interactive consent |
 | open | google/etils | [#831](https://github.com/google/etils/pull/831) fix(epath): preserve cloud URI schemes in fsspec walks |
@@ -76,6 +77,7 @@ Mostly bug fixes in projects I actually use.
 | open | huggingface/evaluate | [#809](https://github.com/huggingface/evaluate/pull/809) Recognize existing directories with dots when saving results |
 | open | huggingface/evaluate | [#808](https://github.com/huggingface/evaluate/pull/808) Allow saving evaluation results when Git is not installed |
 | open | microsoft/knack | [#309](https://github.com/microsoft/knack/pull/309) Preserve UTF-8 config values when updating settings |
+| open | microsoft/typespec | [#12669](https://github.com/microsoft/typespec/pull/12669) [C#] Respect configured JSON document options in BinaryData write fallback |
 | open | mofa-org/mofa | [#1720](https://github.com/mofa-org/mofa/pull/1720) fix(monitoring): restore dashboard resource ID routes |
 | open | NVIDIA/garak | [#2383](https://github.com/NVIDIA/garak/pull/2383) Keep the request when truncating judge prompts |
 | open | NVIDIA/NVTX | [#181](https://github.com/NVIDIA/NVTX/pull/181) Python: preserve target script arguments in the profiling CLI |
