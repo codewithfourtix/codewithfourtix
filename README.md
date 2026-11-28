@@ -63,7 +63,6 @@ Mostly bug fixes in projects I actually use.
 | open | aboutcode-org/scancode-toolkit | [#4784](https://github.com/aboutcode-org/scancode-toolkit/pull/4784) Fix empty range in terminate_pool_with_backoff making it a no-op |
 | open | aboutcode-org/scancode-toolkit | [#4783](https://github.com/aboutcode-org/scancode-toolkit/pull/4783) Fix incorrect timing parameter passed to run_scanners |
 | open | aboutcode-org/scancode-toolkit | [#4782](https://github.com/aboutcode-org/scancode-toolkit/pull/4782) Fix unreachable JSON validation code in validate_input_path |
-| open | aboutcode-org/scancode.io | [#2253](https://github.com/aboutcode-org/scancode.io/pull/2253) Clone GitHub and GitLab repository URLs given as inputs |
 | open | anthropics/anthropic-sdk-python | [#1913](https://github.com/anthropics/anthropic-sdk-python/pull/1913) fix(tools): preserve an explicitly empty description |
 | open | google-deepmind/concordia | [#475](https://github.com/google-deepmind/concordia/pull/475) Preserve memory text when restoring checkpoints |
 | open | google-deepmind/optax | [#1716](https://github.com/google-deepmind/optax/pull/1716) Fix ACProp second moment to use the new first moment |
@@ -92,6 +91,7 @@ Mostly bug fixes in projects I actually use.
 | open | RocketChat/Rocket.Chat | [#41028](https://github.com/RocketChat/Rocket.Chat/pull/41028) i18n: Fix spelling errors in English source strings |
 | open | sgl-project/sglang | [#28845](https://github.com/sgl-project/sglang/pull/28845) Fix Llama32 tool-call parser truncating text after final call |
 | closed | aboutcode-org/fetchcode | [#210](https://github.com/aboutcode-org/fetchcode/pull/210) Preserve npm scopes when fetching package metadata |
+| closed | aboutcode-org/scancode.io | [#2253](https://github.com/aboutcode-org/scancode.io/pull/2253) Clone GitHub and GitLab repository URLs given as inputs |
 | closed | aounkazmi-dev/Car-Show-Speed | [#2](https://github.com/aounkazmi-dev/Car-Show-Speed/pull/2) removing redirectives |
 | closed | google-deepmind/concordia | [#383](https://github.com/google-deepmind/concordia/pull/383) Stop EntityAgent reusing stale pre-act values after a failed step |
 | closed | google-deepmind/torax | [#2637](https://github.com/google-deepmind/torax/pull/2637) Normalize TGLF ExB rotation to the poloidal field |
